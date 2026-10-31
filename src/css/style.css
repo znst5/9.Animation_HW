@@ -1,0 +1,42 @@
+.collapse-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.4s ease;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.collapse-content.show {
+    grid-template-rows: 1fr;
+    border-color: #e2e8f0;
+}
+
+.collapse-inner {
+    overflow: hidden;
+    padding: 15px 20px;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.collapse-btn {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 12px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.collapse-btn:hover {
+    background-color: #0b5ed7;
+}
+
